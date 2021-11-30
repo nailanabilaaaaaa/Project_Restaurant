@@ -18,12 +18,12 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: admin
-      MYSQL_DATABASE: resto_db_kuis2.sql
+      MYSQL_DATABASE: resto_db.sql
     ports:
       - "3306:3306"
     volumes:
       - db:/var/lib/mysql
-      - ./reservation1.sql:/docker-entrypoint-initdb.d/reservation1.sql
+      - ./resto_db.sql:/docker-entrypoint-initdb.d/resto_db.sql
     networks:
       - backend
 
