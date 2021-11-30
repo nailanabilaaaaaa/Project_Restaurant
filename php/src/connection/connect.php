@@ -1,9 +1,9 @@
 <?php
 
 //main connection file for both admin & front end
-$servername = "localhost"; //server
-$username = "root"; //username
-$password = ""; //password
+$servername = "10.0.0.244"; //server
+$username = "admin"; //username
+$password = "Nelsay_12345"; //password
 $dbname = "resto_db";  //database
 
 // Create connection
